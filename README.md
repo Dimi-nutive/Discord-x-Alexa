@@ -1,18 +1,17 @@
-# Summer 2021 - Replit Hackathon / Alexa skill
+# Discord x Alexa
 
-## Unofficial Discord API - Alexa Skill
+##A Discord API | Alexa Skill
 
-Send instructions to your Discord account with this skill.
+Alexa fetches your command | interprets and then perform an action on your discord.
 
-### Why Discord ?
-
-I don't know. :)
 
 ## Intents
 
-- [x] `GetLastMention`: Tells who mentionned you the last time.
+- [x] `GetLastMention`: Tells you about your recent mention
 - [x] `LastMentionMarkAsRead`: Mark as read the latest mention you've got.
 - [x] `CreateMessage`: Send a message to a user or a guild text channel mentionned in the aliases.json file.
+
+| || | || | BETA VERSION 0.1
 
 These are basic intents but I'll add more !
 
