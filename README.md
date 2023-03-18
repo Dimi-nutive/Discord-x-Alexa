@@ -25,15 +25,12 @@ Then you can run `yarn start` to start the webserver, or
 
 ### Create skill
 
-You can follow [this tutorial/template from Replit](https://blog.replit.com/replexa)
-to create your Alexa skill, and replace their repository by mine.
-Copy `.env.sample` to `.env`, give [your account Discord token](https://gist.github.com/Vexcited/94b9691653195d6ce3b9df6bc8dabe0f),
+In `.env`, give your account Discord token,
 give your Alexa Skill ID then point the skill endpoint to your repl URL,
 import intents and enjoy.
 
 ### Intents and languages
 
-This skill **supports French, English and Spanish (BETA)**.
 To import them, go to Assets -> JSON Editor in Alexa,
 go to the `/intents` folder, and import
 the JSON file that you want to Alexa.
@@ -77,7 +74,6 @@ _You want to get access a text channel in a guild and a private DM with a friend
 
 ## Skill Invocation / Commands
 
-### English
 
 Invocation name: `unofficial discord a. p. i.`. \
 So you would say something like, `Alexa, open unofficial discord` or `Alexa, open discord api skill`.
