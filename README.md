@@ -1,6 +1,6 @@
 # Discord x Alexa
 
-##A Discord API | Alexa Skill
+## A Discord API | Alexa Skill
 
 Alexa fetches your command | interprets and then perform an action on your discord.
 
