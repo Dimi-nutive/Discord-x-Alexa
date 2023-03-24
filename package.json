@@ -1,0 +1,26 @@
+{
+    "name": "discord-alexa-skill",
+    "version": "0.4.0",
+    "main": "src/index.js",
+    "repository": "https://github.com/Dimi-nutive/Discord-x-Alexa",
+    "author": {
+      "name": "Akul Chaudhary",
+      "email": "akulchaudhary07@gmail.com",
+      "url": "https://github.com/Dimi-nutive/Dimi-nutive"
+    },
+    "license": "MIT",
+    "scripts": {
+      "start": "node src/index.js",
+      "start:watch": "nodemon src/index.js"
+    },
+    "dependencies": {
+      "ask-sdk": "^2.11.0",
+      "ask-sdk-express-adapter": "^2.11.0",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "node-fetch": "^2.6.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.12"
+    }
+  }
