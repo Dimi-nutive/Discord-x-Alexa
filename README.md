@@ -63,10 +63,10 @@ _You want to get access a text channel in a guild and a private DM with a friend
 ```json
 {
   "channels": {
-    "my server global channel": "837076888744755321"
+    "test-server": "837076888744755321"
   },
   "users": {
-    "my friend": "590848440922144788"
+    "test": "590848440922144788"
   }
 }
 ```
