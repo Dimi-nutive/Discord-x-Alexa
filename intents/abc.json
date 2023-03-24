@@ -1,0 +1,108 @@
+{
+    "name": "CreateCallIntent",
+    "slots": [
+        {
+            "name": "user",
+            "type": "MessageDestinationType",
+            "samples": [
+                "user",
+                "channel"
+            ]
+        },
+        {
+            "name": "name1",
+            "type": "AMAZON.SearchQuery",
+            "multipleValues": {
+                "enabled": false
+            }
+        }
+    ],"samples": [
+        "create a call to {user}",
+        "create a call",
+        "make a call to a {user}",
+        "make call",
+        "create call for {user}",
+        "make a call for {user}",
+        "make call",
+        "call"
+    ],
+    "types": [
+    {
+        "name": "CallDestinationType",
+        "values": [
+            {
+                "name": {
+                    "value": "user",
+                    "synonyms": [
+                        "friend",
+                        "girl",
+                        "guy"
+                    ]
+                }
+            }
+        ]
+    }
+    ],
+"dialog": {
+    "intents": [
+        {
+            "name": "CallMessageIntent",
+            "confirmationRequired": true,
+            "prompts": {
+                "confirmation": "Confirm.Intent.593451559498"
+            },
+            "slots": [
+                {
+                    "name": "user",
+                    "type": "CallDestinationType",
+                    "confirmationRequired": false,
+                    "elicitationRequired": true,
+                    "prompts": {
+                        "elicitation": "Elicit.Slot.593451559498.1194728785278"
+                    }
+                },
+                {
+                    "name": "name1",
+                    "type": "AMAZON.SearchQuery",
+                    "confirmationRequired": true,
+                    "elicitationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Slot.593451559498.701527985058",
+                        "elicitation": "Elicit.Slot.593451559498.701527985058"
+                    }
+                }
+            ]
+        }
+    ]
+},
+"delegationStrategy": "ALWAYS",
+        "prompts": [
+            {
+                "id": "Confirm.Intent.593451559498",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Confirm to call {user} {name1} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.593451559498.701527985058",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which {user} would you like to send a message to ?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.593451559498.701527985058",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want to call the {user} {name1} ?"
+                    }
+                ]
+            }
+        ]
+}
