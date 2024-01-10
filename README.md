@@ -65,7 +65,7 @@ _You want to get access a text channel in a guild and a private DM with a friend
     "test-server": "1088722421969862692"
   },
   "users": {
-    "test": "590848440922144788"
+    "test": "650266849652768771"
   }
 }
 ```
